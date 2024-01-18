@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114" height="13" viewBox="0 0 114 13">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 18px;
+        mix-blend-mode: luminosity;
+        fill: #fff;
+        font-family: Tavolga-Free, Tavolga;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="macaroons" class="cls-1" x="-0.812" y="12.809">macaroons</text>
+</svg>

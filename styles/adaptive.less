@@ -1,0 +1,627 @@
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main {
+    .main-block {
+      padding: 80px 0 300px 0;
+      position: relative;
+
+      .container {
+        .main-image {
+          position: absolute;
+          z-index: 0;
+          max-width: 100%;
+          right: calc(50% - 350px);
+          bottom: 60px;
+
+          .main-image-img {
+            max-width: 100%;
+            position: relative;
+          }
+
+          @keyframes pulse {
+            from {
+              transform: scale(1);
+              opacity: 1;
+            }
+
+            to {
+              transform: scale(3);
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .container {
+      grid-column-gap: 35px;
+    }
+
+    .about-title {
+      font-size: 42px;
+    }
+
+    .about-image {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .advantages {
+    .container {
+      .advantages-items {
+        grid-column-gap: 55px;
+      }
+    }
+  }
+
+  .order-form {
+    .container {
+      grid-column-gap: 65px;
+
+      .strawberry {
+        right: calc(100% - 120px);
+      }
+    }
+  }
+}
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+  .header {
+    .number {
+      visibility: hidden;
+    }
+  }
+
+  .main {
+    .main-block {
+      padding: 72px 0 420px 0;
+
+      .container {
+        .main-info {
+          .main-text {
+            margin-top: 74px;
+          }
+
+          .main-action {
+            margin-top: 40px;
+          }
+
+          .main-image {
+            @keyframes pulse {
+              from {
+                transform: scale(1);
+                opacity: 1;
+              }
+
+              to {
+                transform: scale(2.8);
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .about-title {
+        max-width: 450px;
+        text-align: center;
+      }
+
+      .about-text {
+        max-width: 668px;
+        text-align: center;
+      }
+
+      .about-image {
+        max-width: 302px;
+        margin-top: 40px;
+        align-self: center;
+      }
+    }
+  }
+
+  .advantages {
+    .container {
+      .advantages-items {
+        grid-column-gap: 54px;
+        grid-template-columns: repeat(2, 220px);
+        grid-row-gap: 80px;
+        justify-content: center;
+
+        .advantages-item > * {
+          max-width: 220px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  .assortment {
+    .container {
+      .assortment-items {
+        justify-items: center;
+        grid-template-columns: repeat(2, 263px);
+        grid-row-gap: 80px;
+        grid-column-gap: 30px;
+        justify-content: center;
+      }
+    }
+  }
+
+  .order-form {
+    padding: 120px 0;
+
+    .container {
+      grid-template-columns: 406px 1fr;
+      grid-column-gap: 0;
+
+      .strawberry {
+        right: calc(50% - 100px);
+        top: 232px;
+      }
+
+      .strawberry-second {
+        top: 160px;
+        right: 109px;
+      }
+
+      .order-form-image {
+        position: absolute;
+        right: 20px;
+        bottom: -120px;
+
+        .order-form-image-img {
+          max-width: 352px;
+        }
+      }
+
+      .order-form-info {
+
+      }
+    }
+  }
+}
+
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+  .header {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 375px;
+
+      .menu {
+        .menu-list {
+          margin-top: 20px;
+        }
+      }
+
+      .number {
+        display: none;
+      }
+    }
+  }
+
+  .main {
+    .main-block {
+      padding-top: 25px;
+      padding-bottom: 300px;
+
+      .container {
+        justify-content: center;
+
+        .main-info {
+          .main-title {
+            font-size: 32px;
+            line-height: 1.25;
+            text-align: center;
+          }
+
+          .main-text {
+            margin: 40px auto 0 auto;
+            font-size: 16px;
+            line-height: 1.438;
+            text-align: center;
+          }
+
+          .main-action {
+            text-align: center;
+          }
+        }
+
+        .main-image {
+          right: calc(50% - 100px);
+          bottom: 68px;
+          max-width: 250px;
+
+          &::before,
+          &::after {
+            top: 11%;
+            left: 11%;
+          }
+
+          .main-image-img {
+
+          }
+
+          @keyframes pulse {
+            from {
+              transform: scale(1);
+              opacity: 1;
+            }
+
+            to {
+              transform: scale(1.5);
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    padding-top: 100px;
+    padding-bottom: 0;
+
+    .container {
+      .about-title {
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+        max-width: 360px;
+      }
+
+      .about-text {
+        margin-top: 40px;
+        font-size: 16px;
+        width: 345px;
+      }
+
+      .about-image {
+        margin-top: 59px;
+      }
+    }
+  }
+
+  .advantages {
+    padding: 60px 0 100px 0;
+
+    .container {
+      .advantages-items {
+        grid-column-gap: 15px;
+        grid-template-columns: repeat(2, 165px);
+        grid-row-gap: 36px;
+        justify-content: center;
+
+        .advantages-item {
+          max-width: 165px;
+        }
+      }
+    }
+  }
+
+  .item-title {
+    font-size: 18px;
+  }
+
+  .item-text {
+    font-size: 13px;
+  }
+
+  .assortment {
+    padding: 100px 0;
+
+    .container {
+      .assortment-title {
+        font-size: 30px;
+        margin-bottom: 65px;
+      }
+
+      .assortment-items {
+        grid-template-columns: repeat(1, 263px);
+      }
+    }
+  }
+
+
+  .order-form {
+    padding: 100px 0 77px 0;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .strawberry {
+        top: 113px;
+        left: calc(50% - -95px);
+      }
+
+      .strawberry-second {
+        display: none;
+      }
+
+      .order-form-image {
+        display: none;
+      }
+
+      .order-form-info {
+        .order-form-title {
+          font-size: 30px;
+          text-align: left;
+        }
+
+        .order-form-text {
+          width: 100%;
+          font-size: 16px;
+          line-height: 1.437;
+          text-align: left;
+          /*max-width: 345px;*/
+          margin-top: 44px;
+        }
+
+        .order-form-choose {
+          margin: 60px 0 21px 0;
+        }
+
+        .order-choose-input {
+          /*width: 345px;*/
+          width: 100%;
+        }
+
+        .form-button {
+          width: 345px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 50px 0;
+
+    .container {
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+
+      .logo-rights {
+        position: relative;
+
+        .logo {
+          order: 1;
+        }
+
+        .rights {
+          position: absolute;
+          bottom: -220px;
+          width: 165px;
+          left: -25px;
+        }
+      }
+
+      .number {
+        margin-top: 40px;
+        order: 2;
+      }
+
+      .footer-inst {
+        order: 3;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+  .main {
+    .header {
+      .container {
+        justify-content: space-between;
+        align-items: center;
+
+        .header-burger {
+          display: block;
+          order: 2;
+
+          svg {
+            width: 40px;
+            height: 22px;
+          }
+        }
+
+        .logo {
+          align-self: center;
+          order: 1;
+        }
+
+        .menu {
+          z-index: 999;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.87);
+          display: none;
+          color: rgb(164, 107, 0);
+
+          .menu-close {
+            display: block;
+            width: 24px;
+            height: 24px;
+            fill: #821328;
+            position: absolute;
+            top: 34px;
+            right: 27px;
+          }
+
+          .menu-list {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0 auto;
+
+            .menu-link {
+              color: rgb(164, 107, 0);
+            }
+
+            li {
+              margin: 15px 0;
+            }
+          }
+        }
+
+        .menu.open {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .main-block {
+      .container {
+        .main-info {
+          .main-title {
+            font-size: 31px;
+          }
+        }
+      }
+    }
+  }
+
+  .order-form {
+    .container {
+      .order-form-info {
+        .order-form-text {
+          max-width: 345px;
+        }
+      }
+    }
+  }
+}
+
+/* 320 - 374 */
+@media screen and (max-width: 374px) {
+  .main {
+    .main-block {
+      .container {
+        .main-info {
+
+          .main-title {
+            font-size: 26px;
+          }
+
+          .main-text {
+            font-size: 14px;
+          }
+        }
+
+        .main-image {
+          right: calc(50% - 120px);
+        }
+      }
+    }
+  }
+
+  .about {
+    .container {
+      .about-title {
+        font-size: 26px;
+      }
+
+      .about-text {
+        font-size: 13px;
+        width: 280px;
+      }
+    }
+  }
+
+  .advantages {
+    .container {
+      .advantages-items {
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(2, 135px);
+
+        .advantages-item {
+          max-width: 135px;
+
+          .item-title {
+            font-size: 15px;
+          }
+
+          .item-text {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .assortment {
+    .container {
+      .assortment-title {
+        width: 280px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .order-form {
+    .container {
+      .strawberry {
+        left: calc(50% - -65px);
+      }
+
+      .order-form-info {
+        .order-choose-input {
+          width: 280px;
+        }
+
+        .form-button {
+          width: 280px
+        }
+      }
+    }
+  }
+
+  .present {
+    bottom: 80px;
+    right: 275px;
+
+    .present-button {
+      width: 70px;
+      height: 70px;
+      bottom: 10px;
+      right: 10px;
+
+      svg {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}
